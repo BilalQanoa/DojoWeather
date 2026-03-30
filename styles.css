@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+.navbar {
+    background-color: #93c5fa;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 150px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.main-header h2 {
+    font-size: 2.2rem;
+}
+
+.temp-control {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.temp-control select {
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+.horizontal-line {
+    height: 2px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+/* Forecast cards */
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.forecast-card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forecast-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.forecast-card img {
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.forecast-card p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.temps {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.high {
+    color: #cc453d;
+}
+
+.low {
+    color: #4592ce;
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    z-index: 1000;
+}
+
+.cookie-banner img {
+    height: 60px;
+}
+
+.cookie-content {
+    max-width: 600px;
+}
+
+.cookie-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.cookie-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.cookie-content a {
+    color: #4592ce;
+    text-decoration: underline;
+}
+
+.accept-btn {
+    background-color: #93c5fa;
+    border: 3px solid black;
+    padding: 8px 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px black;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .temp-control {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .forecast-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forecast-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .cookie-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 15px;
+    }
+}
