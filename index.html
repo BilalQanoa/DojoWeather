@@ -16,11 +16,11 @@
     <header class="navbar">
         <div class="nav-container">
             <h1 class="logo">DojoWeather</h1>
-            <ul class="nav-links">
-                <li onclick="showAlert()">Burbank</li>
-                <li onclick="showAlert()">Chicago</li>
-                <li onclick="showAlert()">Dallas</li>
-            </ul>
+            <nav class="nav-links">
+                <a onclick="showAlert(this)">Burbank</a>
+                <a onclick="showAlert(this)">Chicago</a>
+                <a onclick="showAlert(this)">Dallas</a>
+            </nav>
         </div>
     </header>
 
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="horizontal-line"></div>
+        <hr class="horizontal-line"></hr>
 
         <div class="forecast-container">
             <div class="forecast-card">
@@ -45,8 +45,8 @@
                 <img src="assets/some_rain.png" alt="some rain">
                 <p>some rain</p>
                 <div class="temps">
-                    <span class="high">24°</span>
-                    <span class="low">18°</span>
+                    <span class="high tem">24°</span>
+                    <span class="low tem">18°</span>
                 </div>
             </div>
             <div class="forecast-card">
@@ -80,7 +80,7 @@
     </main>
 
     <!--    Cookie Banner   -->
-    <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-banner">
         <img src="assets/cookie.png" alt="Cookie logo">
         <div class="cookie-content">
             <h3>Stop! Cookie time</h3>

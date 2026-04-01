@@ -1,10 +1,9 @@
-function showAlert() {
-    alert("Loading weather report...");
+function showAlert(element) {
+    alert(element.innerText);
 }
 
 function acceptCookies() {
-    document.getElementById("cookie-banner").remove();
-    // document.querySelector("#cookie-banner").remove();
+    document.querySelector(".cookie-banner").remove();
 }
 
 /*
@@ -15,6 +14,9 @@ function acceptCookies() {
 function convertTemperatures(element) {
     const highs = document.querySelectorAll(".high");
     const lows = document.querySelectorAll(".low");
+
+    const temps = document.querySelectorAll(".tem");
+
 
     for (let i = 0; i < highs.length; i++) {
         let highTemp = parseInt(highs[i].innerText);
